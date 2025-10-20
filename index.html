@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>GaLamCo</title>
+    <title>Flores y corazones</title>
     <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -475,20 +475,17 @@
                     </path>
                 </svg>
             </div>
+            <div class="idle-overlay" aria-live="polite">
+                <div class="idle-counter" aria-label="Bộ đếm thời gian chờ">
+                    <span id="idle-counter">00:00</span>
+                </div>
+                <div id="idle-message" class="idle-message" role="status">
+                    Liệu quay về như trước kia được không...
+                </div>
+            </div>
             <!-- partial -->
 
-            <script>
-                // 确保动画立即开始
-                document.addEventListener('DOMContentLoaded', function () {
-                    setTimeout(function () {
-                        const container = document.querySelector('.container');
-                        if (container) {
-                            container.classList.remove('container');
-                        }
-                    }, 100);
-                });
-            </script>
-
+            <script src="./script.js"></script>
 </body>
 
 </html>
