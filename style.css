@@ -1586,28 +1586,6 @@ body:not(.container) * {
   opacity: 1;
 }
 
-.idle-counter {
-  background: rgba(76, 29, 149, 0.55);
-  border: 1px solid rgba(245, 208, 254, 0.4);
-  padding: 0.8rem 1.6rem;
-  border-radius: 999px;
-  font-family: "Fira Code", "Courier New", monospace;
-  font-size: 1.1rem;
-  letter-spacing: 0.08em;
-  color: #f5f3ff;
-  box-shadow: 0 0.75rem 2rem rgba(109, 40, 217, 0.35);
-  backdrop-filter: blur(8px);
-  margin-bottom: 1.5rem;
-  transform: translateY(1.5rem);
-  opacity: 0;
-  transition: opacity 0.4s ease, transform 0.5s ease;
-}
-
-.idle-overlay.active .idle-counter {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 .idle-message {
   font-size: 1rem;
   color: var(--sparkle);
